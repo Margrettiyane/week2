@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        {
+            box-sizing: border-box
+        }
+        h1 {
+            margin-bottom: 15px;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+.row {
+            width:100%;
+            height:190px;
+            background-color:aliceblue;
+            padding-top:20px;
+            padding-left:20px;
+            padding-right:20px;
+        }
+        #p1 {
+            float:left;
+            width:30%;
+            height:160px;
+            background-color: blueviolet;
+            border:solid black;
+        }
+        #p2 {
+            float:left;
+            width:30%;
+            height:160px;
+            background-color:blueviolet;
+            border:solid black;
+            margin-left: 20px;
+        }
+        #p3 {
+            float:left;
+            width:30%;
+            height:160px;
+            background-color:blueviolet;
+            border:solid black;
+            margin-left: 20px;
+        }
+        h1 {
+            color:red;
+        }
+        @media (min-width: 992px) {
+            .p1, .p2, p3 
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>OUR MENU</h1>
+        <div id="container">
+            <p id="p1"> chicken is a domesticated junglefowl species, with attributes of wild species such as the
+                grey and the Ceylon junglefowl that are originally from Southeast Asia </p>
+            <p id="p2"> Beef is the culinary name for meat from cattle (Bos taurus).In prehistoric times,humankind
+                hunted aurochs and later domesticated them. </p>
+            <p id="p3"> Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt,
+                accompanied by a variety of ingredients, such as seafood—often raw—and vegetables </p>
+        </div>
+        <div class="row">
+            <div class="column"><p1>Chicken</p1></div>
+            <div class="column"><p2>Beef</p2></div>
+            <div class="column"><p3>Sushi</p3></div>
+        </div>
+    </center>
+</body>
+</html>
